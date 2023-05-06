@@ -10,6 +10,9 @@ html {
     --footer-text-color: #F4F4FD;
     --logo-web-color: #4D5AE5;
     --background-white:#FFFFFF;
+    --icon-color: #8e8f99;
+    --sns-icon:#F4F4FD;
+    --green:#31D0AA;
 }
 h1,h2,h3,h4,h5.h6,p {
     margin: 0;
@@ -58,17 +61,17 @@ body {background:var(--background-white);
 
 .header {text-decoration: none;
     border-bottom: 1px solid #E7E9FC;
-}
-
-.top-line {
-    display: flex;
-    align-items: center;
 
     border-bottom: 1px solid #E7E9FC;
     box-shadow: 
     0px 2px 1px rgba(46, 47, 66, 0.08), 
     0px 1px 1px rgba(46, 47, 66, 0.16), 
     0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.top-line {
+    display: flex;
+    align-items: center;
 }
 
 .header-nav {
@@ -256,11 +259,6 @@ display: inline-block;
     gap: 24px;
 }
 
-.img-item {
-
-}
-
-
 /* Saction 4 */
 .team { 
     background: var(--background-color-gray);
@@ -297,8 +295,7 @@ display: inline-block;
 
 
 }
-.team-photo {
-}
+
 .card-content {
     padding: 32px 16px;
     
@@ -338,6 +335,18 @@ display: inline-block;
 
 }
 
+.sns-link:hover{
+    background-color:var(--nav-color)
+}
+.sns-link:focus{
+    background-color:var(--nav-color)
+}
+
+.sns-icon {
+    fill: var(--sns-icon);
+
+}
+
 /* saction 5 */
 .customers {
     padding-bottom: 120px;
@@ -348,11 +357,34 @@ display: inline-block;
     gap: 24px;
 }
 .client-item {
-    width: 168px;
+    width: calc((100% - 120px) / 6);
     height: 88px;
-    border: 1px solid #8E8F99;
-    border-radius: 4px;
 }
+.client-link {
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--icon-color);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--icon-color);
+}
+
+.client-link:hover{
+    border-color: var(--nav-color); 
+    color: var(--nav-color); 
+}
+.client-link:focus{
+    border-color: var(--nav-color); 
+    color: var(--nav-color); 
+}
+
+.client-icon {
+    fill: currentColor;
+}
+
+
 
 
 /* Footer */
@@ -433,6 +465,18 @@ display: inline-block;
     align-items: center;
     justify-content: center;
 
+}
+.sns-footer-link:hover {
+    background-color:var(--green)
+
+}
+.sns-footer-link:focus{
+    background-color:var(--green)
+
+}
+
+.sns-footer-icon{
+    fill: var(--sns-icon);
 }
 
 
