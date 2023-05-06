@@ -362,6 +362,7 @@ display: inline-block;
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+    color: var(--brand-color);
 }
 .clients-logo {
     display: flex;
